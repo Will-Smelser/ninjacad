@@ -1,0 +1,229 @@
+2013-04-07 23:17:44 - PHP Notice:  Undefined variable: template in C:\xampp\htdocs\ninjacad.com\catalog\controller\product\product.php on line 457
+2013-04-07 23:33:09 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\ninjacad.com\catalog\model\catalog\product.php on line 470
+2013-04-07 23:33:09 - PHP Notice:  Undefined index: route in C:\xampp\htdocs\ninjacad.com\catalog\model\catalog\product.php on line 471
+2013-04-07 23:36:20 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' WHERE product_id = '50' AND p2l.store_id = '0' limit 1' at line 1<br />Error No: 1064<br />SELECT * FROM oc_product_to_layout as p2l  left join oc_layout_route as lr on lr.layout_id = p2l.layout_id' WHERE product_id = '50' AND p2l.store_id = '0' limit 1 in C:\xampp\htdocs\ninjacad.com\system\database\mysql.php on line 50
+2013-04-07 23:36:39 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\ninjacad.com\catalog\model\catalog\product.php on line 471
+2013-04-08 0:22:34 - PHP Notice:  Undefined variable: potions in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\product\report-roof.tpl on line 62
+2013-04-08 0:22:34 - PHP Notice:  Undefined variable: potions in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\product\report-roof.tpl on line 84
+2013-04-08 0:22:44 - PHP Notice:  Undefined variable: potions in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\product\report-roof.tpl on line 84
+2013-04-08 2:35:15 - PHP Notice:  Undefined index: value in C:\xampp\htdocs\ninjacad.com\catalog\controller\checkout\cart.php on line 543
+2013-04-08 2:35:30 - PHP Notice:  Undefined index: value in C:\xampp\htdocs\ninjacad.com\catalog\controller\checkout\cart.php on line 543
+2013-04-08 2:36:03 - PHP Notice:  Undefined index: value in C:\xampp\htdocs\ninjacad.com\catalog\controller\checkout\cart.php on line 543
+2013-04-08 3:15:13 - PHP Warning:  Illegal string offset 'option_value' in C:\xampp\htdocs\ninjacad.com\catalog\controller\checkout\cart.php on line 543
+2013-04-08 3:15:37 - PHP Warning:  Illegal string offset 'option_value' in C:\xampp\htdocs\ninjacad.com\catalog\controller\checkout\cart.php on line 543
+2013-04-08 3:16:05 - PHP Warning:  Illegal string offset 'option_value' in C:\xampp\htdocs\ninjacad.com\catalog\controller\checkout\cart.php on line 544
+2013-04-10 3:44:53 - PHP Notice:  Undefined index: option_value in C:\xampp\htdocs\ninjacad.com\admin\model\catalog\product.php on line 173
+2013-04-10 3:44:53 - PHP Notice:  Undefined index: option_value in C:\xampp\htdocs\ninjacad.com\admin\model\catalog\product.php on line 173
+2013-04-10 3:46:04 - PHP Notice:  Undefined index: option_value in C:\xampp\htdocs\ninjacad.com\admin\model\catalog\product.php on line 173
+2013-04-10 3:46:04 - PHP Notice:  Undefined index: option_value in C:\xampp\htdocs\ninjacad.com\admin\model\catalog\product.php on line 173
+2013-04-10 3:47:30 - PHP Notice:  Undefined index: option_value in C:\xampp\htdocs\ninjacad.com\admin\model\catalog\product.php on line 173
+2013-04-10 3:47:30 - PHP Notice:  Undefined index: option_value in C:\xampp\htdocs\ninjacad.com\admin\model\catalog\product.php on line 173
+2013-04-11 3:59:25 - PHP Notice:  Undefined variable: data in C:\xampp\htdocs\ninjacad.com\catalog\controller\common\header.php on line 102
+2013-04-11 3:59:30 - PHP Notice:  Undefined variable: data in C:\xampp\htdocs\ninjacad.com\catalog\controller\common\header.php on line 102
+2013-04-11 4:07:36 - PHP Notice:  Undefined index: href in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:07:39 - PHP Notice:  Undefined index: href in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:08:07 - PHP Notice:  Undefined index: href in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:08:31 - PHP Notice:  Undefined index: href in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 85
+2013-04-11 4:08:35 - PHP Notice:  Undefined index: href in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 85
+2013-04-11 4:13:00 - PHP Notice:  Undefined index: category_id in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:13:00 - PHP Notice:  Undefined variable: result in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:14:39 - PHP Notice:  Undefined index: category_id in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 85
+2013-04-11 4:14:39 - PHP Notice:  Undefined variable: result in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 85
+2013-04-11 4:14:42 - PHP Notice:  Undefined index: category_id in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 85
+2013-04-11 4:14:42 - PHP Notice:  Undefined variable: result in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 85
+2013-04-11 4:15:31 - PHP Notice:  Undefined index: category_id in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 85
+2013-04-11 4:15:31 - PHP Notice:  Undefined variable: result in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 85
+2013-04-11 4:17:00 - PHP Notice:  Undefined index: category_id in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:17:00 - PHP Notice:  Undefined variable: result in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:17:32 - PHP Notice:  Undefined index: category_id in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:17:32 - PHP Notice:  Undefined variable: result in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:17:32 - PHP Warning:  Illegal string offset 'category_id' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:17:32 - PHP Notice:  Undefined variable: result in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:17:32 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 85
+2013-04-11 4:18:14 - PHP Notice:  Undefined index: category_id in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:18:14 - PHP Warning:  Illegal string offset 'category_id' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:18:14 - PHP Warning:  Illegal string offset 'product_id' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:18:14 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 85
+2013-04-11 4:18:23 - PHP Notice:  Undefined index: category_id in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:18:23 - PHP Warning:  Illegal string offset 'category_id' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:18:23 - PHP Warning:  Illegal string offset 'product_id' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:18:23 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 85
+2013-04-11 4:18:27 - PHP Notice:  Undefined index: category_id in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:18:27 - PHP Warning:  Illegal string offset 'category_id' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:18:27 - PHP Warning:  Illegal string offset 'product_id' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:18:27 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 85
+2013-04-11 4:18:30 - PHP Notice:  Undefined index: category_id in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:18:30 - PHP Warning:  Illegal string offset 'category_id' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:18:30 - PHP Warning:  Illegal string offset 'product_id' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:18:30 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 85
+2013-04-11 4:19:23 - PHP Notice:  Undefined index: category_id in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:19:23 - PHP Warning:  Illegal string offset 'category_id' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:19:23 - PHP Warning:  Illegal string offset 'product_id' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:19:23 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 85
+2013-04-11 4:19:38 - PHP Notice:  Undefined index: category_id in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:19:38 - PHP Warning:  Illegal string offset 'category_id' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:19:38 - PHP Warning:  Illegal string offset 'product_id' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:19:38 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 85
+2013-04-11 4:19:41 - PHP Notice:  Undefined index: category_id in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:19:41 - PHP Warning:  Illegal string offset 'category_id' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:19:41 - PHP Warning:  Illegal string offset 'product_id' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 84
+2013-04-11 4:19:41 - PHP Warning:  Illegal string offset 'name' in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\common\header.tpl on line 85
+2013-04-13 3:11:41 - PHP Notice:  Error: Could not load language module/address! in C:\xampp\htdocs\ninjacad.com\system\library\language.php on line 39
+2013-04-13 3:12:24 - PHP Notice:  Error: Could not load language module/address! in C:\xampp\htdocs\ninjacad.com\system\library\language.php on line 39
+2013-04-13 3:14:03 - PHP Notice:  Error: Could not load language module/address! in C:\xampp\htdocs\ninjacad.com\system\library\language.php on line 39
+2013-04-13 3:20:54 - PHP Notice:  Error: Could not load language module/address! in C:\xampp\htdocs\ninjacad.com\system\library\language.php on line 39
+2013-04-13 3:20:57 - PHP Notice:  Error: Could not load language module/address! in C:\xampp\htdocs\ninjacad.com\system\library\language.php on line 39
+2013-04-13 3:22:37 - PHP Notice:  Error: Could not load language C:\xampp\htdocs\ninjacad.com/admin/language/english/module/address.php -- module/address! in C:\xampp\htdocs\ninjacad.com\system\library\language.php on line 39
+2013-04-13 3:23:33 - PHP Notice:  Error: Could not load language C:\xampp\htdocs\ninjacad.com/admin/language/english/module/address.php -- module/address! in C:\xampp\htdocs\ninjacad.com\system\library\language.php on line 39
+2013-04-13 3:23:34 - PHP Notice:  Error: Could not load language C:\xampp\htdocs\ninjacad.com/admin/language/english/module/address.php -- module/address! in C:\xampp\htdocs\ninjacad.com\system\library\language.php on line 39
+2013-04-13 3:23:35 - PHP Notice:  Error: Could not load language C:\xampp\htdocs\ninjacad.com/admin/language/english/module/address.php -- module/address! in C:\xampp\htdocs\ninjacad.com\system\library\language.php on line 39
+2013-04-13 3:23:35 - PHP Notice:  Error: Could not load language C:\xampp\htdocs\ninjacad.com/admin/language/english/module/address.php -- module/address! in C:\xampp\htdocs\ninjacad.com\system\library\language.php on line 39
+2013-04-13 3:23:36 - PHP Notice:  Error: Could not load language C:\xampp\htdocs\ninjacad.com/admin/language/english/module/address.php -- module/address! in C:\xampp\htdocs\ninjacad.com\system\library\language.php on line 39
+2013-04-13 3:23:36 - PHP Notice:  Error: Could not load language C:\xampp\htdocs\ninjacad.com/admin/language/english/module/address.php -- module/address! in C:\xampp\htdocs\ninjacad.com\system\library\language.php on line 39
+2013-04-13 3:23:36 - PHP Notice:  Error: Could not load language C:\xampp\htdocs\ninjacad.com/admin/language/english/module/address.php -- module/address! in C:\xampp\htdocs\ninjacad.com\system\library\language.php on line 39
+2013-04-13 3:23:47 - PHP Notice:  Error: Could not load language C:\xampp\htdocs\ninjacad.com/admin/language/english/module/address.php -- module/address! in C:\xampp\htdocs\ninjacad.com\system\library\language.php on line 39
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: button_save in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 14
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: button_cancel in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 14
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: entry_banner in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 21
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: entry_dimension in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 22
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: entry_layout in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 23
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: entry_position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 24
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: entry_status in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 25
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: entry_sort_order in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 26
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: text_content_top in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 59
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: text_content_bottom in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 66
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: text_column_left in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 71
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: text_column_right in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 76
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: text_enabled in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 81
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: text_disabled in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 82
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: button_remove in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 89
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: button_add_module in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 97
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: text_content_top in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 123
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: text_content_bottom in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 124
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: text_column_left in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 125
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: text_column_right in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 126
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: text_enabled in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 129
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: text_disabled in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 130
+2013-04-13 3:42:05 - PHP Notice:  Undefined variable: button_remove in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\slideshow.tpl on line 133
+2013-04-13 3:51:47 - PHP Notice:  Undefined variable: banners in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 112
+2013-04-13 3:51:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 112
+2013-04-13 3:51:47 - PHP Notice:  Undefined variable: layouts in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 118
+2013-04-13 3:51:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 118
+2013-04-13 3:59:48 - PHP Notice:  Undefined variable: banners in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 112
+2013-04-13 3:59:48 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 112
+2013-04-13 3:59:48 - PHP Notice:  Undefined variable: layouts in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 118
+2013-04-13 3:59:48 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 118
+2013-04-13 4:02:58 - PHP Notice:  Undefined variable: banners in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 112
+2013-04-13 4:02:58 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 112
+2013-04-13 4:02:58 - PHP Notice:  Undefined variable: layouts in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 118
+2013-04-13 4:02:58 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 118
+2013-04-13 4:03:01 - PHP Notice:  Undefined variable: banners in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 112
+2013-04-13 4:03:01 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 112
+2013-04-13 4:03:01 - PHP Notice:  Undefined variable: layouts in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 118
+2013-04-13 4:03:01 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 118
+2013-04-13 4:03:02 - PHP Notice:  Undefined variable: banners in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 112
+2013-04-13 4:03:02 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 112
+2013-04-13 4:03:02 - PHP Notice:  Undefined variable: layouts in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 118
+2013-04-13 4:03:02 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 118
+2013-04-13 4:05:21 - PHP Notice:  Undefined variable: banners in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 112
+2013-04-13 4:05:21 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 112
+2013-04-13 4:05:21 - PHP Notice:  Undefined variable: layouts in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 118
+2013-04-13 4:05:21 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 118
+2013-04-13 4:10:49 - PHP Notice:  Undefined variable: banners in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 112
+2013-04-13 4:10:49 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 112
+2013-04-13 4:10:49 - PHP Notice:  Undefined variable: layouts in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 118
+2013-04-13 4:10:49 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 118
+2013-04-13 4:12:38 - PHP Notice:  Undefined variable: banners in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 112
+2013-04-13 4:12:38 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 112
+2013-04-13 4:12:38 - PHP Notice:  Undefined variable: layouts in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 118
+2013-04-13 4:12:38 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 118
+2013-04-13 4:13:26 - PHP Notice:  Undefined variable: banners in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 112
+2013-04-13 4:13:26 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 112
+2013-04-13 4:13:26 - PHP Notice:  Undefined variable: layouts in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 118
+2013-04-13 4:13:26 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 118
+2013-04-13 4:19:49 - PHP Notice:  Undefined variable: layouts in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 106
+2013-04-13 4:19:49 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 106
+2013-04-13 13:40:11 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\catalog\controller\common\column_left.php on line 50
+2013-04-13 13:40:11 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\catalog\controller\common\column_right.php on line 50
+2013-04-13 13:40:11 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\catalog\controller\common\content_top.php on line 50
+2013-04-13 13:40:11 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\catalog\controller\common\content_bottom.php on line 50
+2013-04-13 13:42:46 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 41
+2013-04-13 13:42:46 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 46
+2013-04-13 13:42:46 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 51
+2013-04-13 13:42:46 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 56
+2013-04-13 13:43:08 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 41
+2013-04-13 13:43:08 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 46
+2013-04-13 13:43:08 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 51
+2013-04-13 13:43:08 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 56
+2013-04-13 13:43:16 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\catalog\controller\common\column_left.php on line 50
+2013-04-13 13:43:16 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\catalog\controller\common\column_right.php on line 50
+2013-04-13 13:43:16 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\catalog\controller\common\content_top.php on line 50
+2013-04-13 13:43:16 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\catalog\controller\common\content_bottom.php on line 50
+2013-04-13 13:43:23 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 41
+2013-04-13 13:43:23 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 46
+2013-04-13 13:43:23 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 51
+2013-04-13 13:43:23 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 56
+2013-04-13 13:43:31 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 41
+2013-04-13 13:43:31 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 46
+2013-04-13 13:43:31 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 51
+2013-04-13 13:43:31 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 56
+2013-04-13 13:45:13 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 41
+2013-04-13 13:45:13 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 46
+2013-04-13 13:45:13 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 51
+2013-04-13 13:45:13 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 56
+2013-04-13 13:47:40 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 42
+2013-04-13 13:47:40 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 47
+2013-04-13 13:47:40 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 52
+2013-04-13 13:47:40 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 57
+2013-04-13 13:47:40 - PHP Notice:  Undefined index: sort_order in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 63
+2013-04-13 13:48:35 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 42
+2013-04-13 13:48:35 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 47
+2013-04-13 13:48:35 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 52
+2013-04-13 13:48:35 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 57
+2013-04-13 13:48:35 - PHP Notice:  Undefined index: sort_order in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 63
+2013-04-13 13:51:00 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 42
+2013-04-13 13:51:00 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 47
+2013-04-13 13:51:00 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 52
+2013-04-13 13:51:00 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 57
+2013-04-13 13:51:00 - PHP Notice:  Undefined index: sort_order in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 63
+2013-04-13 13:57:16 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 42
+2013-04-13 13:57:16 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 47
+2013-04-13 13:57:16 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 52
+2013-04-13 13:57:16 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 57
+2013-04-13 13:57:16 - PHP Notice:  Undefined index: sort_order in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 63
+2013-04-13 13:59:14 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 42
+2013-04-13 13:59:14 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 47
+2013-04-13 13:59:14 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 52
+2013-04-13 13:59:14 - PHP Notice:  Undefined index: position in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 57
+2013-04-13 13:59:14 - PHP Notice:  Undefined index: sort_order in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 63
+2013-04-13 14:04:12 - PHP Notice:  Undefined index: status in C:\xampp\htdocs\ninjacad.com\catalog\controller\common\content_top.php on line 50
+2013-04-13 14:06:10 - PHP Notice:  Undefined index: status in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 66
+2013-04-13 14:06:26 - PHP Notice:  Undefined index: status in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 66
+2013-04-13 14:10:25 - PHP Notice:  Undefined index: page_route in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 65
+2013-04-13 14:11:02 - PHP Notice:  Undefined index: page_route in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 65
+2013-04-13 14:11:20 - PHP Notice:  Undefined index: page_route in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 65
+2013-04-13 14:11:35 - PHP Notice:  Undefined index: page_route in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 65
+2013-04-13 14:13:26 - PHP Notice:  Undefined index: page in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 65
+2013-04-13 14:13:53 - PHP Notice:  Undefined index: page in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 65
+2013-04-13 14:14:06 - PHP Notice:  Undefined index: page in C:\xampp\htdocs\ninjacad.com\admin\view\template\module\address.tpl on line 65
+2013-04-13 20:50:14 - PHP Warning:  include(default/template/module/address.tpl): failed to open stream: No such file or directory in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\product\report-roof.tpl on line 70
+2013-04-13 20:50:14 - PHP Warning:  include(): Failed opening 'default/template/module/address.tpl' for inclusion (include_path='.;C:\xampp\php\PEAR') in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\product\report-roof.tpl on line 70
+2013-04-13 20:51:27 - PHP Warning:  include(./template/module/address.tpl): failed to open stream: No such file or directory in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\product\report-roof.tpl on line 70
+2013-04-13 20:51:27 - PHP Warning:  include(): Failed opening './template/module/address.tpl' for inclusion (include_path='.;C:\xampp\php\PEAR') in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\product\report-roof.tpl on line 70
+2013-04-13 20:51:57 - PHP Warning:  include(../../template/module/address.tpl): failed to open stream: No such file or directory in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\product\report-roof.tpl on line 70
+2013-04-13 20:51:57 - PHP Warning:  include(): Failed opening '../../template/module/address.tpl' for inclusion (include_path='.;C:\xampp\php\PEAR') in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\product\report-roof.tpl on line 70
+2013-04-13 20:52:07 - PHP Warning:  include(../../../template/module/address.tpl): failed to open stream: No such file or directory in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\product\report-roof.tpl on line 70
+2013-04-13 20:52:07 - PHP Warning:  include(): Failed opening '../../../template/module/address.tpl' for inclusion (include_path='.;C:\xampp\php\PEAR') in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\product\report-roof.tpl on line 70
+2013-04-13 20:52:17 - PHP Warning:  include(../../../../template/module/address.tpl): failed to open stream: No such file or directory in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\product\report-roof.tpl on line 70
+2013-04-13 20:52:17 - PHP Warning:  include(): Failed opening '../../../../template/module/address.tpl' for inclusion (include_path='.;C:\xampp\php\PEAR') in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\product\report-roof.tpl on line 70
+2013-04-13 20:52:24 - PHP Warning:  include(../template/module/address.tpl): failed to open stream: No such file or directory in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\product\report-roof.tpl on line 70
+2013-04-13 20:52:24 - PHP Warning:  include(): Failed opening '../template/module/address.tpl' for inclusion (include_path='.;C:\xampp\php\PEAR') in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\product\report-roof.tpl on line 70
+2013-04-13 20:59:08 - PHP Notice:  Undefined variable: page in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\module\address.tpl on line 21
+2013-04-13 21:01:35 - PHP Notice:  Undefined variable: page in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\module\address.tpl on line 30
+2013-04-13 21:01:56 - PHP Notice:  Undefined variable: page in C:\xampp\htdocs\ninjacad.com\catalog\view\theme\default\template\module\address.tpl on line 30
+2013-04-15 4:22:25 - PHP Notice:  Undefined index: option_value in C:\xampp\htdocs\ninjacad.com\admin\model\catalog\product.php on line 173
+2013-04-15 4:22:25 - PHP Notice:  Undefined index: option_value in C:\xampp\htdocs\ninjacad.com\admin\model\catalog\product.php on line 173
+2013-04-15 4:54:10 - PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in C:\xampp\htdocs\ninjacad.com\catalog\controller\checkout\cart.php on line 543
+2013-04-15 4:54:10 - PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in C:\xampp\htdocs\ninjacad.com\catalog\controller\checkout\cart.php on line 543
+2013-04-15 4:55:09 - PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in C:\xampp\htdocs\ninjacad.com\catalog\controller\checkout\cart.php on line 543
+2013-04-15 4:55:41 - PHP Warning:  preg_replace(): Unknown modifier '?' in C:\xampp\htdocs\ninjacad.com\catalog\controller\checkout\cart.php on line 543

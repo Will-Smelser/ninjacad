@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="/catalog/view/javascript/jquery/jquery-1.7.1.min.js"></script>
+
+
+<style type="text/css">
+  html { height: 100% }
+  body { height: 100%; margin: 0; padding: 0 }
+  #map-canvas { height: 400px; width:600px; }
+</style>
+<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvHuwddXhBdCEczT0-_H2yeK6BdBv7_dU&sensor=false">
+</script>
+
+<script type="text/javascript">
+    function initialize() {
+      var mapOptions = {
+    	center: new google.maps.LatLng(48.1391265, 11.580186300000037),
+        zoom: 20,
+        mapTypeId: google.maps.MapTypeId.HYBRID,
+        tilt:0,
+        //style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR
+      };
+      window.map = new google.maps.Map(document.getElementById("map-canvas"),
+          mapOptions);
+      
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    
+    function geocode(){
+    	var line1 = $("#address_line_1").val()+",";
+    	var line2 = $("#address_line_2").val();
+    	
+    	if(line2 != ""){
+    		line2 = line2 +",";
+    	}
+    	
+    	var address = line1 + line2 +
+    		$("#city").val()+" "+$("#state").val()+","+$("#zipcode").val();
+    	
+    	console.log(address);
+    	
+    	geocoder = new google.maps.Geocoder();
+    	geocoder.geocode( { 'address': address}, function(results, status) {
+    		if (status == google.maps.GeocoderStatus.OK) {
+    	        map.setCenter(results[0].geometry.location);
+    	        var marker = new google.maps.Marker({
+    	            map: map,
+    	            position: results[0].geometry.location
+    	        });
+    	      }
+    	});
+    	
+    	map.setOptions({
+    	      mapTypeId: google.maps.MapTypeId.HYBRID
+    	});
+    	map.setTilt(0);
+    	
+    	
+    }
+    
+</script>
+
+</head>
+<body>
+
+<form id="address">
+
+<input id="address_line_1" type="text" value="132 e maynard" />line 1<br/>
+<input id="address_line_2" type="text" />line 2<br/>
+
+
+<input name="city" id="city" type="text" value="columbus" />city<br/>
+<input name="state" id="state" type="text" value="oh" />state<br/>
+<input name="zipcode" id="zipcode" type="text" value="43212" />zip<br/>
+
+<input type="button" onclick="geocode()" value="Submit" />
+
+</form>
+
+<div id="map-canvas"/>
+</body>
+</html>

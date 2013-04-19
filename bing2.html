@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Insert title here</title>
+<script type="text/javascript" src="/catalog/view/javascript/jquery/jquery-1.7.1.min.js"></script>
+
+<script charset="UTF-8" type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0">
+</script>
+
+<style type="text/css">
+  html { height: 100% }
+  body { height: 100%; margin: 0; padding: 0 }
+  #mapDiv {
+   position: absolute;
+   top: 20;
+   left: 10;
+   width: 600px;
+   height: 400px;
+   border:#555555 2px solid;
+}
+</style>
+
+<script type="text/javascript">
+	
+var map = (function(){
+	return {
+		mapContainer : "mapDiv", 
+		mapDefaultOptions : {
+			disableKeyboardInput : true,
+			showMapTypeSelector : false,
+			credentials: "AvyHdctVlu2FCkd5VFf5hPaTxvFBkf0QcpmLnYSB7-Uglb-TwwtCOleTPGByaXaj", 
+			zoom:20, 
+			center: null,
+			mapTypeId:Microsoft.Maps.MapTypeId.aerial
+			
+		},
+		defaultLat :40.03649941214659,
+		defaultLong : -83.01738390888278,
+		defaultLocation : null, //set at initialization
+		
+		
+		map:null,
+		
+		pushpin : {
+			parent : null,//parent object
+			obj : null, //the bing pushpin object
+			update : function(location){
+				console.log("update pin",location);
+				this.obj.setLocation(location);
+				this.parent.map.setView({center:location});
+			},
+			
+			dragEnd : function(e){
+				var scope = this;
+				
+				//check that the search manager is loaded
+				if(!this.parent.search.loaded){
+					//TODO handle this better
+					console.log("Search Failed");
+				}
+				
+				var userData = new scope.parent.geocode.userData(scope.parent.geocode, scope.parent.geocode.reverseGoal);
+				var reverseGeocodeRequest = {
+						location: e.target.getLocation(), 
+						count: 5, 
+						callback: scope.parent.geocode.callback, 
+						errorCallback: scope.parent.geocode.error,
+						userData:userData
+				};
+		        
+				this.parent.search.searchManager.reverseGeocode(reverseGeocodeRequest);
+			}
+		},
+		
+		geocode : {
+			parent : null,
+			geoLocationProvider : null,
+			
+			/**
+			 * scope The scope to call goal in
+			 * goal A function to be called on success
+			 *
+			 * return Object
+			 */
+			userData : function(scope, goal){
+				return {scope:scope,goal:goal};
+			},
+			
+			/**
+			 *  Called from geocode (search by address) and 
+			 *  reverseGeocode (search by lat,log) lookups
+			 */
+			callback : function(data, userData){
+				console.log("callback fired");
+		    	var scope = userData.scope;
+		    	    	
+		   		var result = data;
+		   		var msdnEnum = Microsoft.Maps.Search.MatchCode;
+		   		
+		   		//check the match code
+		   		switch(result.matchCode){
+		   		case msdnEnum.none://none
+		   			//TODO handle this
+		   			break;
+		   		case msdnEnum.ambigous:
+		   			//TODO handle this
+		   			break;
+		   		case msdnEnum.upHierarchy:// found by broader search
+		   			//TODO handle this
+		   			break;
+		   		case msdnEnum.modified:
+		   		case msdnEnum.good:
+		   			userData.goal.call(scope, result, userData);
+		   		}	
+		    },
+		    error : function(data){
+		    	//TODO handle the error
+		    	console.log("geocode error",data);
+		    },
+		    
+		    /**
+		     * Executed by callback, geocode from address
+		     */
+		    addressGoal: function(place, userData){
+		    	userData.scope.parent.pushpin.obj.setLocation(place.location);
+		    	userData.scope.parent.map.setView({center:place.location});
+		    },
+		    
+		    /**
+		     * Called by callback, reverseGeocode from lat,long
+		     */
+		    reverseGoal : function(place, userData){
+		    	//update the user text stuff or something
+		    	console.log("user changed location",place);
+		    },
+		    
+		    /**
+		     * Geocode address
+		     */
+			geocode : function(){
+		    	var line1 = $("#address_line_1").val()+",";
+		    	var line2 = $("#address_line_2").val();
+		    	
+		    	if(line2 != ""){
+		    		line2 = line2 +",";
+		    	}
+		    	
+		    	var address = line1 + line2 +
+		    		$("#city").val()+" "+$("#state").val()+","+$("#zipcode").val();
+		    	
+		    	var scope = this;
+		    	var searchRequest = {
+		    		where:address, count: 5, 
+		    		callback:function(data, userData){
+		    			if(data.results.length > 0){
+		    				scope.callback(data.results[0],userData);
+		    			}else{
+		    				//TODO handle not results error
+		    			}
+		    		}, 
+		    		errorCallback: scope.error, 
+		    		userData: new scope.userData(scope, 
+		    				scope.addressGoal)
+		    	};
+		        scope.parent.search.searchManager.geocode(searchRequest);
+		    }
+		},
+		
+		search:{
+			searchManager : null,
+			loaded : false,
+		},
+		
+		init : function(mapDiv, settings){
+			var scope = this;
+			
+			this.mapContainer = mapDiv;
+			
+			//because we are using event, we may often times need access to the parent object
+			this.pushpin.parent = scope;
+			this.geocode.parent = scope;
+			
+			this.defaultLocation = new Microsoft.Maps.Location(scope.defaultLat,scope.defaultLong);
+			this.mapDefaultOptions.center = this.defaultLocation;
+			
+			$.extend(scope.mapDefaultOptions, settings);
+			this.map = new Microsoft.Maps.Map(document.getElementById(scope.mapContainer), scope.mapDefaultOptions);
+			
+			//http://msdn.microsoft.com/en-us/library/gg427615.aspx
+			this.pushpin.obj = new Microsoft.Maps.Pushpin(scope.defaultLocation,{draggable:true});
+			
+			Microsoft.Maps.Events.addHandler(scope.pushpin.obj, 'mouseup', 
+				function(e){
+					//object expect to be called within their own scope
+					scope.pushpin.dragEnd.call(scope.pushpin,e)
+				}
+			);
+			this.map.entities.push(scope.pushpin.obj);
+			
+			//center the map on location
+			//http://msdn.microsoft.com/en-us/library/hh125833.aspx
+			this.geocode.geoLocationProvider = new Microsoft.Maps.GeoLocationProvider(scope.map);
+			
+			this.geocode.geoLocationProvider.getCurrentPosition({showAccuracyCircle:false,updateMapView:false,
+        		successCallback:function(data){
+        			scope.pushpin.update(data.center);
+        		}
+        	});
+			
+			//load the search
+			Microsoft.Maps.loadModule("Microsoft.Maps.Search",{ callback: function(){
+				scope.search.searchManager = new Microsoft.Maps.Search.SearchManager(scope.map);
+				scope.search.loaded = true;
+			}});
+			
+		}
+	}
+}());
+
+$(document).ready(function(){
+	map.init("mapDiv",null);
+	$("#submit").click(function(){map.geocode.geocode()});
+});
+
+    
+</script>
+
+</head>
+<body>
+
+<form id="address">
+
+<input id="address_line_1" type="text" value="132 e maynard" />line 1<br/>
+<input id="address_line_2" type="text" />line 2<br/>
+
+
+<input name="city" id="city" type="text" value="columbus" />city<br/>
+<input name="state" id="state" type="text" value="oh" />state<br/>
+<input name="zipcode" id="zipcode" type="text" value="43212" />zip<br/>
+
+<input id="submit" type="button" value="Submit" />
+
+</form>
+
+<div id="mapDiv"/>
+</body>
+</html>
