@@ -59,7 +59,7 @@
       
       <div id="report-info"  class="htabs">
 		    <a href="#tabs-1">Enter Address</a>
-		    <a href="#tabs-2">Select Roof</a>
+		    <a href="#tabs-2" id="mapTab">Select Roof</a>
 		    <?php if ($options) { ?>
 		    	<a href="#tabs-3">Select Options</a>
 		    <?php } ?>
@@ -196,15 +196,13 @@
 		          <span class="required">*</span>
 		          <?php } ?>
 		          <b><?php echo $option['name']; ?>:</b><br />
-		          <textarea name="option[<?php echo $option['product_option_id']; ?>]" cols="40" rows="5">
-		          	<?php 
-		          		if(isset($_POST['geotype']) && $_POST['geotype'] == 'addr'){
-							echo "{$_POST['addr_line']}\n{$_POST['addr_city']}\n{$_POST['addr_state']}\n{$_POST['addr_zip']}";
-						}else{
-		          			echo $option['option_value'];
-		          		} 
-		          	?>
-		          </textarea>
+				  <textarea name="option[<?php echo $option['product_option_id']; ?>]" cols="40" rows="5"><?php 
+          		  if(isset($_POST['geotype']) && $_POST['geotype'] == 'addr'){
+					echo "{$_POST['addr_line']}\n{$_POST['addr_city']}\n{$_POST['addr_state']}\n{$_POST['addr_zip']}";
+				  }else{
+          			echo $option['option_value'];
+          		  } 
+          		  ?></textarea>
 		        </div>
 		        <br />
 		        <?php } ?>
@@ -548,6 +546,13 @@ $(document).ready(function() {
 		};
 	
 	map.init("mapDiv",null);
+
+	//IE fix
+	$('#mapTab').click(function(){
+		console.log('here');
+		var $mapDiv = $(document.getElementById(map.mapContainer));
+		map.map.setOptions({ height: $mapDiv.height(), width: $mapDiv.width() });
+	});
 	
 	map.pushpin.userfunc = function(latitude,longitude){
 		console.log('userfunc called');
