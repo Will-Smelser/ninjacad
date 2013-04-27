@@ -549,7 +549,6 @@ $(document).ready(function() {
 
 	//IE fix
 	$('#mapTab').click(function(){
-		console.log('here');
 		var $mapDiv = $(document.getElementById(map.mapContainer));
 		map.map.setOptions({ height: $mapDiv.height(), width: $mapDiv.width() });
 	});
