@@ -389,6 +389,17 @@
   </div>
   <?php } ?>
   <?php echo $content_bottom; ?></div>
+  
+  <div id="dialog" >
+  	<h2>Update your address to?</h2>
+  	<div id="dcontent">
+  	</div>
+  	<input id="d_addr_line" type="hidden" />
+  	<input id="d_addr_city" type="hidden" />
+  	<input id="d_addr_state" type="hidden" />
+  	<input id="d_addr_zip" type="hidden" />
+  </div>
+  
 <script type="text/javascript"><!--
 $(document).ready(function() {
 	$('.colorbox').colorbox({
@@ -560,6 +571,50 @@ $(document).ready(function() {
 		$('#tabs-3 input[class=\'decimal\']').last().val(longitude);
 		$('#addr_lat').val(latitude).removeClass('bgtext');
 		$('#addr_long').val(longitude).removeClass('bgtext');
+	};
+
+	//setup dialog
+	$( "#dialog" ).dialog({
+		autoOpen: false,
+		modal: true,
+		buttons: {
+			"Ok": function() {
+				//copy the address over
+				$("#addr_line").val($("#d_addr_line").val());
+				$("#addr_city").val($("#d_addr_city").val());
+				$("#addr_state").val($("#d_addr_state").val());
+				$("#addr_zip").val($("#d_addr_zip").val());
+				
+				$( this ).dialog( "close" );
+			},
+			Cancel: function() {
+            	$( this ).dialog( "close" );
+          	}
+		}
+	});
+	
+	//override this
+	map.geocode.reverseGoal = function(data){
+		//parse the address
+		try{
+			var addr = data.resourceSets[0].resources[0].address;
+
+			$("#d_addr_line").val(addr.addressLine);
+			$("#d_addr_city").val(addr.locality);
+			$("#d_addr_state").val(addr.adminDistrict);
+			$("#d_addr_zip").val(addr.postalCode);
+			
+			var address = $("#addr_line").val()+", "+
+			$("#addr_city").val()+", "+$("#addr_state").val()+" "+$("#addr_zip").val();
+			
+			if(address != addr.formattedAddress){
+				$('#dialog').dialog("open");
+				$("#dcontent").html("<p>"+addr.formattedAddress+"</p>"); 
+			}
+			
+		}catch(e){
+			console.log('error on parsing address');
+		}
 	};
 	
 	$("#button-report-step1").click(function(){

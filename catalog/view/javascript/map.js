@@ -47,6 +47,7 @@ var map = (function(){
 				var userData = new scope.parent.geocode.userData(scope.parent.geocode, scope.parent.geocode.reverseGoal);
 				userData.location = e.target.getLocation();
 					
+				/*
 				var reverseGeocodeRequest = {
 						location: e.target.getLocation(), 
 						count: 5, 
@@ -56,7 +57,24 @@ var map = (function(){
 				};
 				
 				this.parent.search.searchManager.reverseGeocode(reverseGeocodeRequest);
+				*/
+				
+				var url = "http://dev.virtualearth.net/REST/v1/Locations/"+userData.location.latitude+","+userData.location.longitude+"?key="+map.mapDefaultOptions.credentials+"&callback=?";
+				
 				this.update(e.target.getLocation());
+				
+				
+				$.ajax({
+                    url: "http://dev.virtualearth.net/REST/v1/Locations/"+userData.location.latitude+","+userData.location.longitude,
+                    dataType: "jsonp",
+                    data: {
+                        key: map.mapDefaultOptions.credentials
+                    },
+                    jsonp: "jsonp",
+                    success: function (data) {
+                        scope.parent.geocode.reverseGoal(data);
+                    }
+                });
 			}
 		},
 		
@@ -117,7 +135,7 @@ var map = (function(){
 		     * information passed back is based on the address, not the
 		     * lat,long passed in.
 		     */
-		    reverseGoal : function(place, userData){
+		    reverseGoal : function(data){
 		    	console.log('do nothing');
 		    },
 		    
