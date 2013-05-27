@@ -585,6 +585,11 @@ $(document).ready(function() {
 				$("#addr_state").val($("#d_addr_state").val());
 				$("#addr_zip").val($("#d_addr_zip").val());
 				
+				var address = $("#addr_line").val()+", "+
+				$("#addr_city").val()+", "+$("#addr_state").val()+", "+$("#addr_zip").val();
+
+				$('#tabs-3 textarea').first().val(address.replace(/\,\s/g,'\n'));
+				
 				$( this ).dialog( "close" );
 			},
 			Cancel: function() {
@@ -611,6 +616,8 @@ $(document).ready(function() {
 				$('#dialog').dialog("open");
 				$("#dcontent").html("<p>"+addr.formattedAddress+"</p>"); 
 			}
+
+			
 			
 		}catch(e){
 			console.log('error on parsing address');
